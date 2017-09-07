@@ -5,14 +5,7 @@ body {
   opacity: 0.9;
   background-color: black;
   text-align: center;
-}
-
-/*header styling*/
-nav {
-  text-decoration: underline;
-  text-align: right;
-  flex-grow: 1;
-  display: block;
+  margin: 0;
 }
 
 .flex-container {
@@ -20,11 +13,8 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-}
 
+/*header styling*/
 header {
   display: inline-block;
   background-color: black;
@@ -33,6 +23,7 @@ header {
   border-bottom: 1px solid seashell;
   position: fixed;
   z-index: 1;
+  padding-top: 10px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -42,9 +33,21 @@ header img {
   height: 50px;
 }
 
-.logo {
-  display: flex;
-  flex-wrap: wrap;
+nav {
+  text-align: right;
+  flex-grow: 1;
+  display: block;
+  padding-right: 10px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
 }
 
 /*Mission styling*/
@@ -56,11 +59,11 @@ h2, h3, h4 {
 
 #mission {
   height: 700px;
-  padding-top: 120px;
+  padding-top: 70px;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
 }
 
-#mission .mission-text {
+.mission-text {
   margin: auto;
   background-color: black;
   width: 100%;
@@ -72,7 +75,7 @@ h2, h3, h4 {
 #teaofmonth {
   width: 1000px;
   height: 700px;
-  margin: auto;
+  margin: 100px;
   padding-top: 70px:
 }
 
